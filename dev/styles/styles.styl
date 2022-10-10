@@ -1,0 +1,65 @@
+@import 'helpers/mixins'
+@import 'helpers/variables'
+
+html
+	height 100%
+	box-sizing border-box
+	scroll-behavior smooth
+
+body
+	min-height 100%
+	min-width 320px
+	margin 0
+
+*, *::before, *::after
+	box-sizing inherit
+
+button, input, textarea
+	font-family inherit
+
+button
+	cursor pointer
+
+img
+	max-width 100%
+	height auto
+	image-rendering -webkit-optimize-contrast
+
+.sprite
+	display none
+
+.visually-hidden
+	position absolute
+	width 1px
+	height 1px
+	margin -1px
+	padding 0
+	border none
+	overflow hidden
+	white-space nowrap
+	clip rect(0,0,0,0)
+	clip-path inset(100%)
+
+.onlyMobile
+	@media(min-width tablet)
+		display none !important
+
+.onlyDesktop
+	@media(max-width desktop - 1px)
+		display none !important
+
+.upToDesktop
+	@media(min-width desktop)
+		display none !important
+
+.fromMobile
+	@media(max-width tablet - 1px)
+		display none !important
+
+.container
+	max-width 1170px
+	margin 0 auto
+	padding 0 15px
+
+// @import '../blocks/_mixins/**/*.styl'
+@import '../blocks/**/*.styl'
