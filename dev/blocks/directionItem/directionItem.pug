@@ -1,14 +1,20 @@
-mixin directionItem(modificator, extraClasses, text)
+mixin directionItem(modificator, extraClasses, text, linkText, icon)
 	- classList = 'directionItem'
 
 	if modificator
 		each mod in modificator
 			- classList = classList + ' directionItem--' + mod
 
+	if icon
+		- classList = classList + ' directionItem--withIcon'
+
 	if extraClasses
 		- classList = classList + ' ' + extraClasses
 
 	div(class=classList)
-		.directionItem__name #{text}
+		.directionItem__name
+			if icon
+				| !{icon}
+			| #{text}
 		include ../btn/btn.pug
-		+btn(['large', 'white'], 'directionItem__link', 'Подробнее')
+		+btn(['large', 'white'], 'directionItem__link', linkText ? linkText : 'Подробнее')
