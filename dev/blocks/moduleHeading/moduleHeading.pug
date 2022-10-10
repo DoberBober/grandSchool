@@ -1,0 +1,11 @@
+mixin moduleHeading(modificator, extraClasses, text)
+	- classList = 'heading'
+
+	if modificator
+		each mod in modificator
+			- classList = classList + ' heading--' + mod
+
+	if extraClasses
+		- classList = classList + ' ' + extraClasses
+
+	h2(class=classList) #{text}
