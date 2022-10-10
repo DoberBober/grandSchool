@@ -3,11 +3,32 @@ html(lang="ru")
 	include ../blocks/_head/_head.pug
 	+head('Главная')
 
-	body.frontpage
+	body
 		.sprite
 			//- include ../../public/assets/sprite.svg
 
 		include ../blocks/_mixins/_svgElement.pug
+
+
+
+		include ../blocks/header/header.pug
+		
+
+		include ../blocks/about/about.pug
+		include ../blocks/directions/directions.pug
+		include ../blocks/cooperation/cooperation.pug
+		include ../blocks/resourses/resourses.pug
+		include ../blocks/team/team.pug
+		include ../blocks/partners/partners.pug
+
+		div.container
+			include ../blocks/documents/documents.pug
+			include ../blocks/supporters/supporters.pug
+		include ../blocks/subscription/subscription.pug
+
+		
+		include ../blocks/footer/footer.pug
+
 
 
 		include ../blocks/_mixins/_scripts.pug

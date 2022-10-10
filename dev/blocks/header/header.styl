@@ -1,0 +1,52 @@
+.header
+	margin-bottom 64px
+	padding 24px 0
+
+.header__container
+	display grid
+	grid-template-areas 'logo search btns' 'menu menu contacts'
+	grid-template-columns 128px 1fr 484px
+	grid-gap 22px 48px
+	align-items center
+
+.header__logo
+	grid-area logo
+	text-decoration none
+
+.header__search
+	grid-area search
+
+.header__btns
+	grid-area btns
+	display flex
+
+.header__mainmenu
+	grid-area menu
+
+.header__contacts
+	grid-area contacts
+
+.header__btn
+	padding-left 16px
+
+	& + &
+		margin-left 12px
+
+.header__contacts
+	display flex
+	align-items center
+
+.header__contact
+	display flex
+	align-items center
+	font-weight 400
+	font-size 18px
+	line-height 28px
+	text-decoration none
+	color olive
+
+	svg
+		margin-right 10px
+
+	& + &
+		margin-left 32px

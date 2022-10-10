@@ -1,0 +1,14 @@
+mixin btn(modificator, extraClasses, text, icon)
+	- classList = 'btn'
+
+	if modificator
+		each mod in modificator
+			- classList = classList + ' btn--' + mod
+
+	if extraClasses
+		- classList = classList + ' ' + extraClasses
+
+	a(class=classList href="#")
+		if icon 
+			| !{icon}
+		| #{text}

@@ -1,0 +1,47 @@
+footer.footer
+	.container.footer__container
+
+		.footer__contacts
+			h3.footer__heading Контакты
+			a(href="tel:+78003331543").footer__contactsLink
+				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M16.9774 13.5817L16.3417 16.3378C16.2524 16.7274 15.91 17 15.5089 17C8.61065 16.9995 3 11.3888 3 4.49032C3 4.08948 3.27258 3.74661 3.66223 3.65774L6.41834 3.02203C6.81973 2.92902 7.22986 3.13736 7.39665 3.51748L8.66862 6.48413C8.81731 6.83356 8.71702 7.24069 8.42309 7.48075L6.95097 8.66277C7.88007 10.5554 9.41889 12.0942 11.3121 13.0239L12.5173 11.5529C12.7549 11.2581 13.1651 11.1561 13.5145 11.3075L16.4812 12.5791C16.838 12.7669 17.0704 13.1825 16.9774 13.5817Z" fill="currentColor"/>
+				</svg>
+				| 8 800 333-15-43
+			.footer__contactsLinkNote Звонок по России бесплатный
+			a(href="mailto:info@grandschool.net").footer__contactsLink
+				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M18 7.373V14.5C18 15.8807 16.8807 17 15.5 17H4.5C3.11929 17 1.99992 15.8807 1.99992 14.5V7.373L9.74649 11.931C9.90297 12.023 10.097 12.023 10.2535 11.931L18 7.373ZM15.5 4C16.7871 4 17.847 4.9726 17.9848 6.22293L10 10.9199L2.01518 6.22293C2.15304 4.9726 3.21294 4 4.5 4H15.5Z" fill="currentColor"/>
+				</svg>
+				| info@grandschool.net
+
+		include ../socials/socials.pug
+		+socials([], 'footer__socials')
+
+		.footer__office
+			h3.footer__heading Центральный офис
+			.footer__officeAddress 196084, г. Санкт-Петербург, пр. Московский, д. 97, офис 507
+			include ../btn/btn.pug
+			+btn([], 'footer__officeBtn', 'Открыть Яндекс.Карты')
+
+		ul.footer__links
+			li.footer__linksItem
+				a(href="#").footer__linksLink Реквизиты
+					<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.03072 12.473L5.71396 11.169L9.65785 7.22514H0.0761719V5.32031H9.65785L5.71396 1.38281L7.03072 0.0724429L13.231 6.27273L7.03072 12.473Z" fill="currentColor"/>
+					</svg>
+			li.footer__linksItem
+				a(href="#").footer__linksLink Договор оферта
+					<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.03072 12.473L5.71396 11.169L9.65785 7.22514H0.0761719V5.32031H9.65785L5.71396 1.38281L7.03072 0.0724429L13.231 6.27273L7.03072 12.473Z" fill="currentColor"/>
+					</svg>
+			li.footer__linksItem
+				a(href="#").footer__linksLink Пользовательское соглашение
+					<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.03072 12.473L5.71396 11.169L9.65785 7.22514H0.0761719V5.32031H9.65785L5.71396 1.38281L7.03072 0.0724429L13.231 6.27273L7.03072 12.473Z" fill="currentColor"/>
+					</svg>
+			li.footer__linksItem
+				a(href="#").footer__linksLink Политика конфиденциальности
+					<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.03072 12.473L5.71396 11.169L9.65785 7.22514H0.0761719V5.32031H9.65785L5.71396 1.38281L7.03072 0.0724429L13.231 6.27273L7.03072 12.473Z" fill="currentColor"/>
+					</svg>

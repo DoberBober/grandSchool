@@ -1,0 +1,28 @@
+mixin mainmenu(modificator, extraClasses)
+	- classList = 'mainmenu'
+
+	if modificator
+		each mod in modificator
+			- classList = classList + ' mainmenu--' + mod
+
+	if extraClasses
+		- classList = classList + ' ' + extraClasses
+
+	nav(class=classList)
+		ul.mainmenu__list
+			li.mainmenu__item
+				a(href="#").mainmenu__link О нас
+			li.mainmenu__item
+				a(href="#").mainmenu__link Юридические услуги
+			li.mainmenu__item
+				a(href="#").mainmenu__link Вебинары
+			li.mainmenu__item
+				a(href="#").mainmenu__link Курсы
+			li.mainmenu__item
+				a(href="#").mainmenu__link Статьи
+			li.mainmenu__item
+				a(href="#").mainmenu__link Партнёрство
+			li.mainmenu__item
+				a(href="#").mainmenu__link Новости
+			li.mainmenu__item
+				a(href="#").mainmenu__link СДО

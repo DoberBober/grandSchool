@@ -1,0 +1,12 @@
+mixin search(modificator, extraClasses)
+	- classList = 'search'
+
+	if modificator
+		each mod in modificator
+			- classList = classList + ' search--' + mod
+
+	if extraClasses
+		- classList = classList + ' ' + extraClasses
+
+	form(class=classList action="#")
+		input(type="search" aria-label="Введите поисковый запрос" placeholder="Поиск по сайту").search__input

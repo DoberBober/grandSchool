@@ -1,6 +1,18 @@
 @import 'helpers/mixins'
 @import 'helpers/variables'
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root
+	--secondary #DCF6F4
+	--primary #27ACA1
+	--grey #F8FBFE
+	--olive #0C0C3D
+	--primaryDark #04665E
+	--pale3 #F6F8FA
+	--pale2 #CFD7DC
+	--pale #5D647D
+
 html
 	height 100%
 	box-sizing border-box
@@ -8,8 +20,10 @@ html
 
 body
 	min-height 100%
-	min-width 320px
+	min-width 1600px
 	margin 0
+	font-family 'Inter', sans-serif
+	color olive
 
 *, *::before, *::after
 	box-sizing inherit
@@ -57,7 +71,7 @@ img
 		display none !important
 
 .container
-	max-width 1170px
+	max-width 1630px
 	margin 0 auto
 	padding 0 15px
 
