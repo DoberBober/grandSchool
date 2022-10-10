@@ -1,0 +1,13 @@
+section.module.directions
+	.container.directions__container
+		include ../moduleHeading/moduleHeading.pug
+		+moduleHeading([], 'directions__heading', 'Направления деятельности')
+
+		.directions__list 
+			include ../directionItem/directionItem.pug
+			+directionItem([], 'directions__direction', 'Дистанционное обучение')
+			+directionItem([], 'directions__direction', 'Юридическое сопровождение')
+			+directionItem([], 'directions__direction', 'Аттестация')
+			+directionItem([], 'directions__direction', 'Разработка документации')
+			+directionItem([], 'directions__direction', 'Вебинары')
+			+directionItem([], 'directions__direction', 'Лицензирование')
