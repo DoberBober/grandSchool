@@ -1,0 +1,12 @@
+section.module.team
+	.container.team__container 
+		h2.heading.team__heading Наша команда
+
+		.team__list 
+			include ../teamPerson/teamPerson.pug
+			+teamPerson([], 'team__person', 'Ирина Тумашова', 'Руководитель отдела консалтинга', 'i.kolesova@grandschool.net', '8 800 333-15-43', 'доб. 478')
+			+teamPerson([], 'team__person', 'Владимир Сущенко', 'Менеджер по работе с клиентами отдела консалтинга', 'v.sushchenko@grandschool.net', '8 800 333-15-43', 'доб. 477')
+			+teamPerson([], 'team__person', 'Максим Юнчис', 'Менеджер проектов отдела консалтинга', 'm.yunchis@grandschool.net', '8 800 333-15-43', 'доб. 475')
+			+teamPerson([], 'team__person', 'Татьяна Долина', 'Ведущий юрист отдела консалтинга', 't.dolina@grandschool.net', '8 800 333-15-43', 'доб. 479')
+			+teamPerson([], 'team__person', 'Олеся Михальцова', 'Юрист отдела консалтинга', 'o.mikhaltsova@grandschool.net', '8 800 333-15-43', 'доб. 476')
+			+teamPerson([], 'team__person', 'Ульяна Ванеева', 'Директор ЧОУ ДПО «Гранд Скул»', '...', '8 800 333-15-43', 'доб. 475')
