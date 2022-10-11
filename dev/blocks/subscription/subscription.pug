@@ -1,0 +1,10 @@
+section.module.subscription
+	.container.subscription__container 
+		// Можно было и сверстать картикну справа, а не фоном делать, но не вижу в этом смысла. Разве что, текст будет меняться.
+		.subscription__wrapper
+			h2.subscription__heading Читай нашу рассылку и будь в курсе новостей и скидок
+			form(action="#").subscription__form
+				input(type="text" name="name" aria-label="Имя" placeholder="Имя" required).subscription__input
+				input(type="email" name="email" aria-label="Email" placeholder="Email" required).subscription__input
+				button(type="submit").btn.btn--white.btn--large.btn--fullWidth.subscription__submit Подписаться
+		
