@@ -23,10 +23,12 @@ html(lang="ru")
 		//- include ../blocks/team/team.pug
 		//- include ../blocks/partners/partners.pug
 
-		//- div.container
-		//- 	include ../blocks/documents/documents.pug
-		//- 	include ../blocks/supporters/supporters.pug
-		//- include ../blocks/subscription/subscription.pug
+		section.module.legalInfo
+			div.container.legalInfo__container
+				include ../blocks/documents/documents.pug
+				include ../blocks/supporters/supporters.pug
+
+		include ../blocks/subscription/subscription.pug
 
 		
 		include ../blocks/footer/footer.pug
